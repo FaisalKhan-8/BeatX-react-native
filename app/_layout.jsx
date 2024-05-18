@@ -1,7 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { Slot, SplashScreen, Stack } from 'expo-router';
-// Import your global CSS file
-import '../global.css';
 import { useFonts } from 'expo-font';
 import { useEffect } from 'react';
 
@@ -27,6 +25,10 @@ const RootLayout = () => {
       SplashScreen.hideAsync();
     }
   }, [fontsLoaded, error]);
+
+  if (!fontsLoaded) {
+    return null;
+  }
 
   if (!fontsLoaded && !error) {
     return null;
