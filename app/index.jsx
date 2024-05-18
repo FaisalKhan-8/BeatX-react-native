@@ -8,11 +8,11 @@ export default function App() {
       <Text className='text-3xl font-pblack'>BeatX</Text>
       <StatusBar style='auto' />
       <Link
-        href='/profile'
+        href='/home'
         style={{
           color: 'blue',
         }}>
-        Go to Profile
+        Home
       </Link>
     </View>
   );
