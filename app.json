@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "Tranding-video-react-native",
-    "slug": "Tranding-video-react-native",
+    "name": "BeatX",
+    "slug": "beatx",
+    "scheme": "beatx",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -22,6 +23,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": ["expo-router"]
   }
 }
